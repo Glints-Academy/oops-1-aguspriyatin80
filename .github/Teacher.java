@@ -6,7 +6,7 @@ public class Teacher extends Person {
 		super(name, address);
 	}
 
-	String toString() {
+	public String toString() {
 		return String.format(getName(name) + "(" + getAddress(address) + ")");
 	}
 
