@@ -1,4 +1,4 @@
-class Student extends Person {
+public class Student extends Person {
 	int numCourses;
 	String courses;
 	int grades;
@@ -7,7 +7,7 @@ class Student extends Person {
 		super(name, address);
 	}
 
-	public String toString() {
+	String toString() {
 		return String.format(getName(name) + "(" + getAddress(address) + ")");
 	}
 
@@ -26,7 +26,7 @@ class Student extends Person {
 
 	public static void main(String[] args) {
 		Person student = new Person("Agus", "Batch 7");
-		System.out.println("Student: " + student.name + "(" + student.address + ")");
+		System.out.println("Student : " + student.toString());
 	}
 
 }
