@@ -16,7 +16,7 @@ public class Person {
 	}
 
 	void setAddress(String address) {
-		address = "Cirebon";
+		address = address;
 	}
 
 	public String toString() {
