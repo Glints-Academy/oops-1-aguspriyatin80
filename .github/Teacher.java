@@ -7,7 +7,7 @@ public class Teacher extends Person {
 	}
 
 	public String toString() {
-		return String.format(getName(name) + "(" + getAddress(address) + ")");
+		return String.format("Teacher : " + getName(name) + "(" + getAddress(address) + ")");
 	}
 
 	boolean addCourse(String course) {
@@ -30,7 +30,7 @@ public class Teacher extends Person {
 
 	public static void main(String[] args) {
 		Person teacher = new Person("Agus", "Batch 7");
-		System.out.println("Teacher : " + teacher.toString());
+		System.out.println(teacher.toString());
 	}
 
 }
