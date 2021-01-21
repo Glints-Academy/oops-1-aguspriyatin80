@@ -8,7 +8,7 @@ public class Student extends Person {
 	}
 
 	public String toString() {
-		return String.format(getName(name) + "(" + getAddress(address) + ")");
+		return String.format("Student : " + getName(name) + "(" + getAddress(address) + ")");
 	}
 
 	void addCourseGrade(String course, int grade) {
@@ -26,7 +26,7 @@ public class Student extends Person {
 
 	public static void main(String[] args) {
 		Person student = new Person("Agus", "Batch 7");
-		System.out.println("Student : " + student.toString());
+		System.out.println(student.toString());
 	}
 
 }
